@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body{
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero{
+  width: 100%;
+  height: 140vh;
+  background: url(./assets/bg.jpg) no-repeat;
+  background-size: cover;
+}
+.heading{
+  width: 100%;
+  background: rgba(10, 10, 10, 1);  
+}
+
+.equipment{
+  background: url(./assets/bg2.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 140vh;
+}
+.equipment-hero{
+   opacity: .5;
+}
+.card{
+  z-index: 1;
+  background: linear-gradient(to top right, whitesmoke, lightgrey);  
+  transition: transform .2s;
+  -webkit-transition: transform .2s;
+  -moz-transition: transform .2s;
+  -ms-transition: transform .2s;
+  -o-transition: transform .2s;
+}
+.active-card{
+  background: linear-gradient(to top right, rgb(51, 51, 51), rgb(39, 38, 38));
+  color: white;
+}
+svg.changeColor line{
+  fill: whitesmoke;
+}
+.card:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.btn{
+  transition: transform .2s;
+  -webkit-transition: transform .2s;
+  -moz-transition: transform .2s;
+  -ms-transition: transform .2s;
+  -o-transition: transform .2s;
+}
+.btn:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: yellow;
+}
+
+.box{
+  background: rgba(20, 20, 20, 0.8);
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.box-tx{
+  text-align: left;
+  margin-left: 4rem;
+}
+.loader{
+  text-align: right;
+  position:absolute;
+  top: 320px;
+  right: -30px;
+}
+.description{
+  width: 50%;
+  word-wrap: wrap;
+}
+
+.card-group{
+  transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+  -moz-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  -o-transform: translateY(-30%);
+}
+
+.vertical{
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.services{
+  margin-top: -10px;
+}
+
+footer{
+  width: 100%;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:992px) {
+  .loader{
+    display: none;
+  }
+  .description{
+    width: 50%;
+  }
+ 
+}
